@@ -3,7 +3,7 @@ test -s ~/.alias && . ~/.alias || true
 module load cray-python/3.10.10
 
 mkdir /project/project_465001138/apps/envs/lya_env
-python3.7 -m venv /project/project_465001138/apps/envs/lya_env
+python3 -m venv /project/project_465001138/apps/envs/lya_env
 source /project/project_465001138/apps/envs/lya_env/bin/activate
 
 # create lya_env environment in project directory
