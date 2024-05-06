@@ -18,14 +18,14 @@ export LYA_DATA_DIR=/project/project_465001138/data/LyaInference_data/
 
 # Afterwards we clone and install the LyaInference package itself
 cd /project/project_465001138/apps/
-git clone https://github.com/charlottenosam/LyaInference.git
+git clone git@github.com:charlottenosam/LyaInference.git
 cd LyaInference
 pip install -e .
 
 # install pyqt for KDE
 pip uninstall -y pyqt_fit
-pip install git+https://github.com/charlottenosam/pyqt-fit.git
-echo pip install git+https://github.com/charlottenosam/pyqt-fit.git
+pip install git+ssh://git@github.com/charlottenosam/pyqt-fit.git
+echo pip install git+ssh://git@github.com/charlottenosam/pyqt-fit.git
 
 # test installation
 python -c "import reionizer; print('Imported reionizer succesfully'); print(reionizer.get_xHI_tab())"
