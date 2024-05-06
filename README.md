@@ -18,6 +18,12 @@ https://www.lumi.csc.fi/pun/sys/dashboard/
 
 Our project is `project_465001138`
 
+/project/ directory has:
+
+`apps/` - for common software packages
+`data/` - for common data
+`people/` - individual folders for scripts
+
 
 ## Running jobs
 
