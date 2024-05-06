@@ -2,8 +2,9 @@
 test -s ~/.alias && . ~/.alias || true
 module load cray-python/3.10.10
 
-python3.7 -m venv /project/project_465001138/apps/.conda/envs/lya_env
-source /project/project_465001138/apps/.conda/envs/lya_env/bin/activate
+mkdir /project/project_465001138/apps/envs/lya_env
+python3.7 -m venv /project/project_465001138/apps/envs/lya_env
+source /project/project_465001138/apps/envs/lya_env/bin/activate
 
 # create lya_env environment in project directory
 # conda create --prefix /project/project_465001138/apps/.conda/envs/lya_env python=3.7
