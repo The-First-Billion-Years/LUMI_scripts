@@ -1,12 +1,16 @@
 #!/bin/bash
+test -s ~/.alias && . ~/.alias || true
 module load cray-python/3.10.10
 
+python3.7 -m venv /project/project_465001138/apps/.conda/envs/lya_env
+source /project/project_465001138/apps/.conda/envs/lya_env/bin/activate
+
 # create lya_env environment in project directory
-conda create --prefix /project/project_465001138/apps/.conda/envs/lya_env python=3.7
-source activate lya_env
+# conda create --prefix /project/project_465001138/apps/.conda/envs/lya_env python=3.7
+# source activate lya_env
 
 # install requirements
-conda install pip
+# conda install pip
 
 # Make sure the code can find the data
 export LYA_DATA_DIR=/project/project_465001138/data/LyaInference_data/
